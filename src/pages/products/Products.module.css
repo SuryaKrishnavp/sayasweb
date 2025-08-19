@@ -1,0 +1,86 @@
+.productsContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.categorySection {
+  margin-bottom: 3rem;
+}
+
+.categoryTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #0A3E39;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 3px solid #FFD700;
+  position: relative;
+}
+
+.productsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productsTable th {
+  background: #0A3E39;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.productsTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.productsTable tr:last-child td {
+  border-bottom: none;
+}
+
+.productsTable tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.refCode {
+  font-family: monospace;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.description {
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .productsContainer {
+    padding: 1rem;
+  }
+
+  .categoryTitle {
+    font-size: 1.5rem;
+  }
+
+  .productsTable {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .productsTable th,
+  .productsTable td {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
