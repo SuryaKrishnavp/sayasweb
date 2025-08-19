@@ -374,8 +374,8 @@
 
 /* Vision Mission Values */
 .vmvGrid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
   width: 100%;
@@ -383,13 +383,17 @@
 
 .vmvCard {
   background: white;
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 2.5rem;
+  border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   opacity: 0;
   transform: translateY(30px);
   width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .vmvCard.visible {
@@ -402,9 +406,16 @@
 }
 
 .vmvTitle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #0A3E39;
   margin-bottom: 1rem;
+  font-family: var(--font-heading);
+}
+
+.vmvCard p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
 }
 
 /* Expertise Areas */
@@ -455,7 +466,7 @@
 /* Business Section */
 .businessGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
   width: 100%;
@@ -471,6 +482,9 @@
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
 .businessCard:hover {
@@ -599,19 +613,12 @@
   gap: 2rem;
   margin-top: 3rem;
   width: 100%;
-  padding: 1rem;
-  overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-}
-
-.productsGrid::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  padding: 1rem 0;
 }
 
 .productCard {
   background: white;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   opacity: 0;
@@ -620,10 +627,7 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  min-width: 280px;
-  width: 280px;
-  height: 420px;
-  flex-shrink: 0;
+  height: 450px;
 }
 
 .productCard:hover {

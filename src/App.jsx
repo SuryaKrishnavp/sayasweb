@@ -8,10 +8,12 @@ import PrivacyPolicy from './pages/legal/PrivacyPolicy'
 import TermsAndConditions from './pages/legal/TermsAndConditions'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div style={{ 
         minHeight: '100vh',
         backgroundColor: 'var(--bg-gray)',
