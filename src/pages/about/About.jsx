@@ -38,7 +38,7 @@ export default function About() {
           <h2 className={styles.sectionTitle}>Who We Are</h2>
           <div className={styles.overviewContent}>
             <div className={styles.overviewText}>
-              <p>Sayas Group of Companies is a premier food manufacturing company based in Kerala, India. We specialize in producing high-quality sauces, mayonnaise, and traditional foods that blend authentic flavors with modern food technology.</p>
+              <p>Sayas Group of Company is a premier food manufacturing company based in Kerala, India. We specialize in producing high-quality sauces, mayonnaise, and traditional foods that blend authentic flavors with modern food technology.</p>
               <p>Our state-of-the-art manufacturing facility ensures that every product meets international quality standards while maintaining the authentic taste that our customers love.</p>
             </div>
             <div className={styles.stats}>

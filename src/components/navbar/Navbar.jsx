@@ -14,7 +14,7 @@ export default function Navbar() {
           <Link to="/" className={styles.logo}>
             <img src={logo} alt="Saya Food Products" className={styles.logoImage} />
             <div className={styles.brandInfo}>
-              <div className={styles.brandName}>Sayas Group of Companies</div>
+              <div className={styles.brandName}>Sayas Group of Company</div>
               <div className={styles.brandTagline}>Manufacturers & Exporters</div>
             </div>
           </Link>

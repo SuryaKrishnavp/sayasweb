@@ -13,7 +13,7 @@ export default function Footer() {
           <div className={styles.companyInfo}>
             <Link to="/" className={styles.logo}>
               <img src={logo} alt="Saya Food Products" className={styles.logoImage} />
-              <span className={styles.brandName}>Sayas Group of Companies</span>
+              <span className={styles.brandName}>Sayas Group of Company</span>
             </Link>
             <address className={styles.address}>
               1st Floor, 14/291 K Suite 76C<br />
@@ -94,7 +94,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className={styles.copyright}>
-          © {currentYear} Sayas Group of Companies. All rights reserved.
+          © {currentYear} Sayas Group of Company. All rights reserved.
         </div>
       </div>
     </footer>

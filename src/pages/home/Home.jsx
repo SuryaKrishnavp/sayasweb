@@ -26,7 +26,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Welcome to Sayas Group of Companies</h1>
+          <h1 className={styles.heroTitle}>Welcome to Sayas Group of Company</h1>
           <p className={styles.heroSubtitle}>
             A fast-growing food innovation brand from Kerala, India, blending traditional taste with modern technology
           </p>
