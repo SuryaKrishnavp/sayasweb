@@ -144,7 +144,6 @@
 
 .heroTitle {
   font-family: var(--font-heading);
-  font-size: 4.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -152,6 +151,25 @@
   transform: translateY(30px);
   animation: fadeInUp 1s ease forwards;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.welcomeText {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #ffffff, #FFD700);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.companyName {
+  font-size: 4rem;
+  display: block;
   background: linear-gradient(to right, #ffffff, #FFD700);
   -webkit-background-clip: text;
   background-clip: text;
@@ -295,12 +313,17 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .heroTitle {
-    font-size: 3rem;
+  .welcomeText {
+    font-size: 2.2rem;
+  }
+
+  .companyName {
+    font-size: 2.8rem;
   }
 
   .heroSubtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 0 1rem;
   }
 
   .heroFeatures {
@@ -813,7 +836,7 @@
   }
 
   .heroSubtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
   }
 
@@ -839,29 +862,57 @@
   .businessGrid {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .businessCard {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .businessContent {
+    padding: 1.5rem;
+  }
+
+  .businessTitle {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .businessList {
+    font-size: 1.05rem;
   }
 
   .productsGrid {
     flex-direction: column;
-    padding: 0;
-  }
-
-  .vmvCard, .businessCard {
-    width: 100%;
+    padding: 0 0.5rem;
+    gap: 2rem;
   }
 
   .productCard {
     width: 100%;
     min-width: 100%;
+    margin: 0 auto;
   }
 
   .productImage {
-    height: 220px;
+    height: 240px;
   }
 
   .productContent {
-    padding: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .productTitle {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .productDescription {
+    font-size: 1.05rem;
+    line-height: 1.6;
   }
 }
 
@@ -899,13 +950,20 @@
   }
 
   .sectionTitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: left;
   }
 
   .sectionTitle::after {
     left: 0;
     transform: none;
+  }
+
+  .fadeInUp {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   .vmvGrid {
@@ -915,10 +973,13 @@
 
   .vmvCard {
     padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
   }
 
   .vmvTitle {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 
