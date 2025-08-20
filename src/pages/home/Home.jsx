@@ -138,7 +138,7 @@ export default function Home() {
               <div className={styles.productContent}>
                 <h3 className={styles.productTitle}>Premium Mayonnaise</h3>
                 <p className={styles.productDescription}>
-                  Creamy, rich mayonnaise in classic and unique flavors. Ideal for sandwiches and salads.
+                  Creamy, rich mayonnaise in classic and unique flavors.
                 </p>
               </div>
             </div>
