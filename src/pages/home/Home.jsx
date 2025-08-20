@@ -25,6 +25,12 @@ export default function Home() {
     <div className={styles.home}>
       {/* Hero Section */}
       <section className={styles.hero}>
+        <div className={styles.heroBg}></div>
+        <div className={styles.heroWaves}>
+          <div className={`${styles.wave} ${styles.wave1}`}></div>
+          <div className={`${styles.wave} ${styles.wave2}`}></div>
+          <div className={`${styles.wave} ${styles.wave3}`}></div>
+        </div>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
             <span className={styles.welcomeText}>Welcome to</span>
